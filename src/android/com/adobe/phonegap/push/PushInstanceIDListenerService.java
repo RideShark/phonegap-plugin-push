@@ -22,5 +22,9 @@ public class PushInstanceIDListenerService extends FirebaseInstanceIdService imp
         Log.d(LOG_TAG, "Refreshed token: " + refreshedToken);
         // TODO: Implement this method to send any registration to your app's servers.
         //sendRegistrationToServer(refreshedToken);
+
+        // Notify Activity of FCM token
+        Intent intent = new Intent(PushConstants.ACTION_FCM_TOKEN);
+        LocalBroadcastManager.getInstance(this).sendBroadcast(intent);
     }
 }

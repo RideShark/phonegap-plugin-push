@@ -71,6 +71,9 @@ public interface PushConstants {
   public static final String TWILIO_BODY = "twi_body";
   public static final String TWILIO_TITLE = "twi_title";
   public static final String TWILIO_SOUND = "twi_sound";
+  public static final String TWILIO_TO = "twi_to";
+  public static final String TWILIO_FROM = "twi_from";
+  public static final String TWILIO_MESSAGE_TYPE = "twi_message_type";
   public static final String AWS_PINPOINT_BODY = "pinpoint.notification.body";
   public static final String AWS_PINPOINT_PICTURE = "pinpoint.notification.imageUrl";
   public static final String AWS_PINPOINT_PREFIX = "pinpoint.notification";
@@ -102,4 +105,5 @@ public interface PushConstants {
   public static final String ONGOING = "ongoing";
   public static final String LIST_CHANNELS = "listChannels";
   public static final String CLEAR_NOTIFICATION = "clearNotification";
+  public static final String ACTION_FCM_TOKEN = "action_fcm_token";
 }

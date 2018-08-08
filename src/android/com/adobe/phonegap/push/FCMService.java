@@ -73,6 +73,7 @@ public class FCMService extends FirebaseMessagingService implements PushConstant
 
     String from = message.getFrom();
     Log.d(LOG_TAG, "This is a modified push plugin");
+    Log.d(LOG_TAG, "add-layout");
     Log.d(LOG_TAG, "onMessage - from: " + from);
 
     Bundle extras = new Bundle();
